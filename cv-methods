@@ -85,3 +85,23 @@ steps for masking
 3)create a mask --> mask = cv.circle(blank_image, (256, 256), 100, (255, 255, 255), -1)
 4)making an and operation --> result = cv.bitwise_and(image,image, mask)
 5)showing the result --> cv.imshow('result', result)
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+#METHODS USED FOR histogram
+
+1) cv2.calcHist(images, channels, mask, histSize, ranges[, hist[, accumulate]])
+2) cv2.equalizeHist(src[, dst])
+3) cv2.compareHist(H1, H2, method)
+4) cv2.normalize(src[, dst[, alpha[, beta[, norm_type[, dtype[, mask]]]]]])
+
+plt methods
+
+plt.figure()
+plt.title('Grey Scale Histogram')
+plt.xlabel('Bins')
+plt.ylabel('# of pixels')
+plt.plot(grey_hist)
+plt.xlim([0,256])
+plt.show()
