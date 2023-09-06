@@ -105,3 +105,20 @@ plt.ylabel('# of pixels')
 plt.plot(grey_hist)
 plt.xlim([0,256])
 plt.show()
+
+------------------------------------------------------------------------------------------------------------------------
+
+#METHODS USED FOR thresholding
+
+
+
+#simple thresholding
+1) cv2.threshold(src, thresh, maxval, type[, dst]) --> ret, thresh1 = cv.threshold(image, 127, 255, cv.THRESH_BINARY) --> simple thresh holding is used to diplay a range of pixels in a specific color
+
+#inverse thresholding
+2) cv2.threshold(src, thresh, maxval, type[, dst]) --> ret, thresh2 = cv.threshold(image, 127, 255, cv.THRESH_BINARY_INV) --> inverse thresh holding is used to diplay a range of pixels in a specific color
+
+#adaptive thresholding
+3) cv2.adaptiveThreshold(src, maxValue, adaptiveMethod, thresholdType, blockSize, C[, dst]) --> adaptive_thresh = cv.adaptiveThreshold(image, 255, cv.ADAPTIVE_THRESH_MEAN_C, cv.THRESH_BINARY, 11, 8) --> adaptive thresh holding is used to diplay a range of pixels in a specific color
+
+
