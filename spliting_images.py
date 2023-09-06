@@ -26,5 +26,8 @@ print(r.shape)
 
 merged = cv.merge([b,g,r])
 cv.imshow("merged", merged)
+
+
+#wait key and destroy all windows
 cv.waitKey(0)
 cv.destroyAllWindows()

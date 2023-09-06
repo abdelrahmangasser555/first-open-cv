@@ -122,3 +122,12 @@ plt.show()
 3) cv2.adaptiveThreshold(src, maxValue, adaptiveMethod, thresholdType, blockSize, C[, dst]) --> adaptive_thresh = cv.adaptiveThreshold(image, 255, cv.ADAPTIVE_THRESH_MEAN_C, cv.THRESH_BINARY, 11, 8) --> adaptive thresh holding is used to diplay a range of pixels in a specific color
 
 
+------------------------------------------------------------------------------------------------------------------------
+
+#METHODS USED FOR edge detection
+
+1) cv2.Canny(image, threshold1, threshold2[, edges[, apertureSize[, L2gradient]]]) --> edges = cv.Canny(image, 100, 200) --> canny edge detection is used to detect the edges of an image
+
+2) cv2.Sobel(src, ddepth, dx, dy[, dst[, ksize[, scale[, delta[, borderType]]]]]) --> sobelx = cv.Sobel(image, cv.CV_64F, 1, 0, ksize=5) --> sobel edge detection is used to detect the edges of an image
+
+
