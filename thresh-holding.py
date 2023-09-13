@@ -18,7 +18,8 @@ print(threshhold)
 cv.imshow('simple thresholded', thresh)
 
 #inverse thresholding
-threshhold, thresh_inv = cv.threshold(grey, 125, 255, cv.THRESH_BINARY_INV)
+threshhold, thresh_inv = cv.threshold(grey, 200, 255, cv.THRESH_BINARY_INV)
+
 cv.imshow('inverse thresholded', thresh_inv)
 
 #adaptive thresholding
