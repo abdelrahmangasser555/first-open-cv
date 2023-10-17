@@ -1,9 +1,17 @@
 import cv2 as cv
-import numpy as np
 
 
-blank  = np.zeros((500,500,3), dtype="uint8")
+vedio = cv.VideoCapture(0)
 
-#spliting the image and coloring it
 
-blank[0:250 , 0:250] = 0,0,255
+while True:
+    ret , frame = vedio.read()
+    if ret == True:
+        cv.imshow("vedio",frame)
+        if cv.waitKey(1) == ord("q"):
+            break
+    else:
+        break
+
+vedio.release()
+cv.destroyAllWindows()
